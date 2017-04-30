@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/themes/base/css")
+</head>
+<body>
+    <div id="wrapper">
+        <div id="headerwrap">
+            <div id="header">
+                <h4>Welcome to Bowling game</h4>
+            </div>
+        </div>
+        <div id="leftcolumnwrap">
+            <div id="leftcolumn">
+               
+            </div>
+        </div>
+        <div id="contentwrap">
+            <div id="content">
+                @RenderBody()
+            </div>
+        </div>
+        <div id="rightcolumnwrap">
+            <div id="rightcolumn">
+               
+            </div>
+        </div>
+        <div id="footerwrap">
+            <div id="footer">
+                <p style="margin-top:-2px;">Developer By Desh Deepak</p>
+            </div>
+        </div>
+        </div>
+
+       
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryui")
+        <script src="~/Scripts/angular.js"></script>
+        <script src="~/Scripts/angular-route.js"></script>
+        <script src="~/Scripts/angular-sanitize.js"></script>
+        @RenderSection("scripts", required: false)
+</body>
+</html>

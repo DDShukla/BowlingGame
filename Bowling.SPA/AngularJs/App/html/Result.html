@@ -1,0 +1,26 @@
+﻿
+<div class="col-lg-offset-5" style="margin:20px;">
+    <div class="alert alert-info" style="text-align:center">
+       <h2>Total Score: {{totalScore}}</h2>  
+    </div>
+</div>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr style="text-align:center;"><td colspan="10"> <strong>Frame Wise Result</strong></td></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td ng-repeat="frame in frames"><strong>F-{{frame}}</strong></td>
+                </tr>
+                <tr>
+                    <td ng-repeat="frameScore in frameWiseScore track by $index">{{frameScore}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<div class="col-lg-offset-8" style="margin: 100px 0px 0px 300px;">
+    <button ng-click="TryAgain()" class="btn btn-danger">Try Again</button>
+</div>

@@ -1,0 +1,39 @@
+﻿<div style="width:100%;height:100px;">
+    <div class="alert alert-warning" style="width:200px;float:left;text-align:center">
+       <strong>Frame Number</strong> 
+        <p><strong>{{CurrentFrame}}</strong></p>
+</div>
+
+    <div class="alert alert-success" style="width:200px;float:right;text-align:center">
+        <strong>  Total Score </strong>
+        <p> <strong>{{CurrentScore}}</strong></p>
+</div>
+</div>
+
+<div style="margin:30px 0px 0px 80px">
+
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-sm-4" for="rollOne">Roll One </label>
+            <div class="col-sm-4">
+                <input class="form-control" type="number" min="0" max="10" id="rollOne" ng-model="rollone" placeholder="Roll One Pins">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-4" for="rollTwo">Roll Two </label>
+            <div class="col-sm-4">
+                <input class="form-control" type="number" min="0" max="10" id=" rolltwo" ng-model="rolltwo" placeholder="Roll Two Pins">
+            </div>
+        </div>
+        <div class="form-group" ng-show="BonusRoll">
+            <label class="control-label col-sm-4" for="rollThree">Roll Third </label>
+            <div class="col-sm-4">
+                <input class="form-control" type="number" min="0" max="10" id=" rollthree" ng-model="rollThree" placeholder="Roll Three Pins">
+            </div>
+        </div>
+
+        <div class="col-sm-offset-4 col-sm-6" style="margin-top:50px;">
+            <button type="submit" ng-click="showFinalScore()" class="btn btn-primary">Submit Frame</button>
+        </div>
+    </form>
+</div>

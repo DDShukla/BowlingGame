@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppLogic", "AppLogic", "{61BA154B-A133-48E5-8399-140B386172E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppClient", "AppClient", "{5DC604B5-85D1-4404-81FD-AC89E5DB4888}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppLogicTest", "AppLogicTest", "{856B29CA-D94B-4399-BB84-3D90C4D3D270}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bowling.LogicLayer", "Bowling.LogicLayer\Bowling.LogicLayer.csproj", "{7960A651-3709-4276-BE17-58DED33B127C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bowling.LogicLayer.Test", "Bowling.LogicLayer.Test\Bowling.LogicLayer.Test.csproj", "{067456C0-086C-46A8-B37F-1405717B7BFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{844A58A9-E1D9-4D47-8A61-5B6862841E70}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bowling.WebAPI", "Bowling.WebAPI\Bowling.WebAPI.csproj", "{1A03080E-0566-4F73-868B-DBD43EDB38D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bowling.SPA", "Bowling.SPA\Bowling.SPA.csproj", "{0489F437-179F-4CE3-9BD8-11984E7E2953}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7960A651-3709-4276-BE17-58DED33B127C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7960A651-3709-4276-BE17-58DED33B127C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7960A651-3709-4276-BE17-58DED33B127C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7960A651-3709-4276-BE17-58DED33B127C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{067456C0-086C-46A8-B37F-1405717B7BFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{067456C0-086C-46A8-B37F-1405717B7BFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{067456C0-086C-46A8-B37F-1405717B7BFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{067456C0-086C-46A8-B37F-1405717B7BFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A03080E-0566-4F73-868B-DBD43EDB38D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A03080E-0566-4F73-868B-DBD43EDB38D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A03080E-0566-4F73-868B-DBD43EDB38D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A03080E-0566-4F73-868B-DBD43EDB38D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0489F437-179F-4CE3-9BD8-11984E7E2953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0489F437-179F-4CE3-9BD8-11984E7E2953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0489F437-179F-4CE3-9BD8-11984E7E2953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0489F437-179F-4CE3-9BD8-11984E7E2953}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7960A651-3709-4276-BE17-58DED33B127C} = {61BA154B-A133-48E5-8399-140B386172E2}
+		{067456C0-086C-46A8-B37F-1405717B7BFC} = {856B29CA-D94B-4399-BB84-3D90C4D3D270}
+		{1A03080E-0566-4F73-868B-DBD43EDB38D5} = {5DC604B5-85D1-4404-81FD-AC89E5DB4888}
+		{0489F437-179F-4CE3-9BD8-11984E7E2953} = {5DC604B5-85D1-4404-81FD-AC89E5DB4888}
+	EndGlobalSection
+EndGlobal
